@@ -1,11 +1,11 @@
 Name     ArduVGAVSync;
-PartNo   00 ;
-Date     8/19/2024 ;
-Revision 01 ;
-Designer mc ;
-Company  foo ;
-Assembly None ;
-Location  ;
+PartNo   00;
+Date     8/19/2024;
+Revision 01;
+Designer mc;
+Company  foo;
+Assembly None;
+Location ;
 Device   g16v8as;
 
 /* Inputs */
@@ -47,6 +47,6 @@ blankR = (cnt:'d'0);
 vsyncS = (cnt:'d'601);
 vsyncR = (cnt:'d'605);
 
-/* Low 4 bits are zero - number divisable by 16 */
+/* Last line, pulse _new screen_ line */
 ardu_int = (cnt:'d'627);
 
