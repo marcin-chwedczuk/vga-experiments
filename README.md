@@ -65,7 +65,7 @@ I plan to switch to a more powerful ATF22V10 chip in the final build.
 
 BTW You can select mode by specifying a suffix to the device in PLD file, e.g. `G16V8AS` means a simple mode while `G16V8MS` means a registered mode. You can find more about those in ATF16V8B _datasheet_ (the truth is out there).
 
-## VGA Signal
+### VGA Signal
 
 This video [https://youtu.be/5exFKr-JJtg?feature=shared](https://youtu.be/5exFKr-JJtg?feature=shared) is all that you need.
 
@@ -77,5 +77,11 @@ Alternative designs: [https://www.youtube.com/watch?v=RcMilPYFlr0](https://www.y
 supports multiple colors and is PC compatible.
 
 
+## Schematics
+
+[schematics](./schematics/) directory contains both PNG & PDFs.
+
+VGA Timing signals generator and shifting register:
+![vga timings circuit](./schematics/vga-timings.png)
 
 
