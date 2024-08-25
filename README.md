@@ -85,3 +85,5 @@ VGA Timing signals generator and shifting register:
 ![vga timings circuit](./schematics/vga-timings.png)
 
 
+Arduino connection:
+![arduino connection](./schematics/vga-arduino.png)
