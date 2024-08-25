@@ -1,0 +1,52 @@
+Name     ArduVGAVSync;
+PartNo   00 ;
+Date     8/19/2024 ;
+Revision 01 ;
+Designer mc ;
+Company  foo ;
+Assembly None ;
+Location  ;
+Device   g16v8as;
+
+/* Inputs */
+
+PIN 1 = cnt0;
+PIN 2 = cnt1;
+PIN 3 = cnt2;
+PIN 4 = cnt3;
+
+PIN 5 = cnt5;  /* fix for messed PCB board */
+PIN 6 = cnt4;
+PIN 7 = cnt6;
+PIN 8 = cnt7;
+
+PIN 9 = cnt8;
+PIN 11 = cnt9;
+
+/* Outputs */
+PIN 12 = ardu_int;
+
+PIN 15 = blankS;
+PIN 16 = blankR;
+
+PIN 17 = vsyncS;
+PIN 18 = vsyncR;
+
+PIN 19 = !cnt_reset;
+
+
+/* Logic */  
+
+FIELD cnt = [cnt0..9];
+
+cnt_reset = (cnt:'d'628);
+
+blankS = (cnt:'d'600);
+blankR = (cnt:'d'0);
+
+vsyncS = (cnt:'d'601);
+vsyncR = (cnt:'d'605);
+
+/* Low 4 bits are zero - number divisable by 16 */
+ardu_int = (cnt:'d'627);
+

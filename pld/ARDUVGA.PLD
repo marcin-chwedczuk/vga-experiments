@@ -1,0 +1,57 @@
+Name     ArduVGA ;
+PartNo   00 ;
+Date     8/19/2024 ;
+Revision 01 ;
+Designer mc ;
+Company  foo ;
+Assembly None ;
+Location  ;
+Device   g16v8as;
+
+/* Inputs */
+
+PIN 1 = cnt0;
+PIN 2 = cnt1;
+PIN 3 = cnt2;
+PIN 4 = cnt3;
+
+PIN 5 = cnt4;
+PIN 6 = cnt5;
+PIN 7 = cnt6;
+PIN 8 = cnt7;
+
+PIN 9 = cnt8;
+
+/* Outputs */
+
+PIN 12 = !cnt_reset;
+
+PIN 13 = hcnt_pulseS; /* This is for pulsing next counter */
+PIN 14 = hcnt_pulseR; /* This is for pulsing next counter */
+
+PIN 15 = blankS;
+PIN 16 = blankR;
+
+PIN 17 = hsyncS;
+PIN 18 = hsyncR;
+
+PIN 19 = int_load;
+
+/* Logic */
+
+FIELD cnt = [cnt0..8];
+
+cnt_reset = (cnt:'d'264);
+
+hcnt_pulseS = cnt_reset;
+hcnt_pulseR = (cnt:'d'0);
+
+blankS = (cnt:'b'011001000);
+blankR = (cnt:'d'0);
+
+hsyncS = (cnt:'d'210);
+hsyncR = (cnt:'d'242);
+
+/* Low 4 bits are zero - number divisable by 8 */
+int_load = !cnt0 & !cnt1 & !cnt2;                                        
+
