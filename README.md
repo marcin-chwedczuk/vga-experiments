@@ -64,3 +64,18 @@ support it in "Simple" mode. I was forced to use "Simple" mode as I needed both 
 I plan to switch to a more powerful ATF22V10 chip in the final build.
 
 BTW You can select mode by specifying a suffix to the device in PLD file, e.g. `G16V8AS` means a simple mode while `G16V8MS` means a registered mode. You can find more about those in ATF16V8B _datasheet_ (the truth is out there).
+
+## VGA Signal
+
+This video [https://youtu.be/5exFKr-JJtg?feature=shared](https://youtu.be/5exFKr-JJtg?feature=shared) is all that you need.
+
+If you need a slower introduction you may want to check Ben Eater's videos [https://eater.net/vga](https://eater.net/vga).
+
+VGA Timings [http://tinyvga.com/vga-timing](http://tinyvga.com/vga-timing), if it's gone there is a web-archive [copy](https://web.archive.org/web/20240811040718/http://tinyvga.com/vga-timing).
+
+Alternative designs: [https://www.youtube.com/watch?v=RcMilPYFlr0](https://www.youtube.com/watch?v=RcMilPYFlr0). The guy is building a PC compatible computer using breadboards. But uses a dedicated chips for it's VGA card. It is a more complicated design but
+supports multiple colors and is PC compatible.
+
+
+
+
