@@ -97,7 +97,7 @@ I used LM317T voltage regulator and powered it from 9V 2.5A wall adapter and LM3
 ## Results
 
 The completed build:
-![setup](./pics/setup.png)
+![setup](./pics/setup.jpg)
 
 Video: [https://www.youtube.com/shorts/JnYwsofQ0bc](https://www.youtube.com/shorts/JnYwsofQ0bc)
 
