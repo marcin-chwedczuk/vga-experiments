@@ -93,3 +93,17 @@ Arduino connection:
 Additionally each chip has a small decoupling capacitor (0.1uF).
 Power distribution over breadboards must be very solid for this to work properly.
 I used LM317T voltage regulator and powered it from 9V 2.5A wall adapter and LM317T was getting quite hot.
+
+## Results
+
+The completed build:
+![setup](./schematics/setup.png)
+
+Video: [https://www.youtube.com/shorts/JnYwsofQ0bc](https://www.youtube.com/shorts/JnYwsofQ0bc)
+
+Conclusions:
+
+* I tested 3 different memory chips: AS7C256B and AS6C4008 from Alliance Memory and a generic SRAM chip UM6264B.
+ UM6264B was _too slow_ for this application. Both AS chips where fine.
+* There is a snowing problem when updating the screen this can be easily fixed by doing the video memory writes only during blanking
+ period. This of course will reduce the speed of writing.
