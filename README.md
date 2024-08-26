@@ -1,5 +1,11 @@
 # vga-experiments
 
+<p float="left">
+  <img src="pics/img1.png" width="100" />
+  <img src="pics/img2.png" width="100" /> 
+  <img src="pics/img3.png" width="100" />
+</p>
+
 GOAL: Create a dual port video RAM memory using a static RAM chip and a few 74HTC245 octal bus transceivers.
 (WTF is a dual port RAM? -> [https://en.wikipedia.org/wiki/Dual-ported_RAM](https://en.wikipedia.org/wiki/Dual-ported_RAM))
 
