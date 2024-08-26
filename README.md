@@ -84,6 +84,12 @@ supports multiple colors and is PC compatible.
 VGA Timing signals generator and shifting register:
 ![vga timings circuit](./schematics/vga-timings.png)
 
+A "half" dual-port memory:
+![memory](./schematics/vga-memory.png)
 
 Arduino connection:
 ![arduino connection](./schematics/vga-arduino.png)
+
+Additionally each chip has a small decoupling capacitor (0.1uF).
+Power distribution over breadboards must be very solid for this to work properly.
+I used LM317T voltage regulator and powered it from 9V 2.5A wall adapter and LM317T was getting quite hot.
